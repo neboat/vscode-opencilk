@@ -1,0 +1,38 @@
+{
+  "name": "cilk",
+  "displayName": "Cilk",
+  "description": "Cilk parallel language extension to C/C++",
+  "version": "0.0.1",
+  "publisher": "OpenCilk",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "c",
+      "aliases": ["Cilk-C", "cilkc", "C", "c"],
+      "extensions": [".c",".i",".h"],
+      "configuration": "./language-configuration.json"
+    },
+    {
+      "id": "cpp",
+      "aliases": ["Cilk-C++", "cilkcpp", "C++", "Cpp", "cpp"],
+      "extensions": [".cpp",".cc",".cxx",".c++",".hpp",".hh",".hxx",".h++"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "c",
+      "scopeName": "source.cilkc",
+      "path": "./syntaxes/cilkc.tmLanguage.json"
+    },
+    {
+      "language": "cpp",
+      "scopeName": "source.cilkcpp",
+      "path": "./syntaxes/cilkcpp.tmLanguage.json"
+    }]
+  }
+}
