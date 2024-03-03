@@ -1,7 +1,7 @@
 {
   "name": "cilk",
   "displayName": "Cilk",
-  "description": "Cilk parallel language extension to C/C++",
+  "description": "Cilk task-parallel language extension to C/C++",
   "version": "0.0.1",
   "publisher": "OpenCilk",
   "license": "MIT",
@@ -14,13 +14,13 @@
   "contributes": {
     "languages": [{
       "id": "c",
-      "aliases": ["Cilk-C", "cilkc", "C", "c"],
+      "aliases": ["Cilk/C", "cilkc", "C", "c"],
       "extensions": [".c",".i",".h"],
       "configuration": "./language-configuration.json"
     },
     {
       "id": "cpp",
-      "aliases": ["Cilk-C++", "cilkcpp", "C++", "Cpp", "cpp"],
+      "aliases": ["Cilk/C++", "cilkcpp", "C++", "Cpp", "cpp"],
       "extensions": [".cpp",".cc",".cxx",".c++",".hpp",".hh",".hxx",".h++"],
       "configuration": "./language-configuration.json"
     }],
