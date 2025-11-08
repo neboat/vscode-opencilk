@@ -2,6 +2,11 @@
 
 This langauge extension provides syntax-highlighting for Cilk programs.  This extension adds the **Cilk/C** and **Cilk/C++** language modes, which extend the C and C++ langauge modes, respectively, with support for syntax-highlighting the Cilk keywords `cilk_for`, `cilk_spawn`, `cilk_scope`, `cilk_sync`, and `cilk_reducer`.
 
+To install a development copy of this extension:
+1. Download this repository
+2. In VS Code, select, "Developer: Install Extension from Location..." from the command pallette.
+3. Select the directory where you downloaded this repository.
+
 You can enable more powerful VS Code capabilities to work on Cilk programs using the [clangd VS Code extension](vscode:extension/llvm-vs-code-extensions.vscode-clangd) configured to use [OpenCilk](https://www.opencilk.org/)'s custom version of [clangd](https://clangd.llvm.org/).
 
 ## Features
